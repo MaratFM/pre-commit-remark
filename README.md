@@ -16,6 +16,20 @@ Add this to your `.pre-commit-config.yaml`:
     rev: ''  # Use the sha or tag you want to point at
     hooks:
     -   id: remark
-        args: [] # list of args for remark-lint
-        additional_dependencies: ['remark-cli@8.0.1', 'remark-preset-lint-recommended@4.0.1'] # use latest version and add additional plugins here 
+        args: ['--output', '--frail'] # list of args for remark
+        additional_dependencies: ['remark-cli@8.0.1', 'remark-preset-lint-recommended@4.0.1'] # use latest versions and add additional plugins here 
  ```
+
+### Useful arguments
+
+**--output**
+
+Will fix some of the issues and rewrite files.
+
+**--frail**
+
+Exit with 1 on warnings.
+
+**--rc-path=.remarkrc**
+
+Provide custom path to remarkrc file.

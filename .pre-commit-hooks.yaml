@@ -2,6 +2,5 @@
   name: remark
   description: "Runs remark markdown processor."
   entry: remark
-  args: ['--output']
   language: node
   types: [markdown]
